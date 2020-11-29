@@ -1,5 +1,6 @@
 import React from 'react';
-import dayjs from 'dayjs';
+import Image from 'next/image';
+import moment from 'moment';
 import url from 'url';
 
 const BASE_PATH = '';
@@ -19,10 +20,15 @@ const Cell : React.FC<Props> = ({ data }) => (
     <article className="mini-post">
       <header>
         <h3><a href={data.link}>{data.title}</a></h3>
-        <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
+        <time className="published">{moment(data.date).format('MMMM, YYYY')}</time>
       </header>
       <a href={data.link} className="image">
-        <img src={url.resolve(BASE_PATH, data.image)} alt={data.title} />
+        <Image
+          src={url.resolve(BASE_PATH, data.image)}
+          alt={data.title}
+          width={1200}
+          height={700}
+        />
       </a>
       <div className="description">
         <p>{data.desc}</p>
