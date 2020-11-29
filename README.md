@@ -1,20 +1,18 @@
 # Personal Website
 
-## [mldangelo.com](http://mldangelo.com) and serverless [mldangelo.github.io/personal-site](https://mldangelo.github.io/personal-site/)
+## [mldangelo.com](http://mldangelo.com)
 
-My personal website. Easily modifiable, and built using modern javascript with [Create React App](https://github.com/facebook/create-react-app).
+My personal website. Hosted for free via [GitHub Pages](https://pages.github.com/). Easily modifiable, and built using [TypeScript](https://www.typescriptlang.org/) and [Next.js](https://nextjs.org/).
 
-The master branch of this repository contains a simplified version of my website intended for serverless hosting on github pages. To view the source for the version hosted at [mldangelo.com](https://mldangelo.com), checkout the [server](https://github.com/mldangelo/personal-site/tree/server) branch.
+**A note on adapting this repository to your own personal website**
 
-## A note on adapting this repository to your own personal website
-
-Many people have contacted me about adapting this website. I have tried to make things as simple as possible. There are still bugs. I am sorry. If you find a bug, please email me (help@mldangelo.com) or submit an issue or a pull request.
+Many people have contacted me about adapting this website. I have tried to make things as simple as possible. There are still bugs. I am sorry. If you find a bug, please email me (help@mldangelo.com) or submit an issue or a pull request (I'll buy you a coffee as a thank you).
 
 ## Dependencies
 
 Tested with:
 
-* node >= v12, v14. [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) recommended for managing node versions.
+* node >= v14. [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) is recommended for managing node versions.
 
 ## Set up
 
@@ -37,13 +35,13 @@ You may wish to fork this repository or remove my remote origin and add your own
 
     and set values as appropriate. Most people will not need to make changes.
 
-3. Run the following command to build the react application and serve it with hot module reloading:
+3. Run the following command to build the Next.js application and serve it with hot module reloading:
 
     ```bash
     npm run dev
     ```
 
-    Navigate to `<ip>:<port>` default: [http://localhost:7999](http://localhost:7999) to view my website.
+    Navigate to `<ip>:<port>` default: [http://localhost:3000](http://localhost:3000) to view my website.
 
     This completes set up instructions. Please continue reading to learn how to modify this site to make it your own.
 
