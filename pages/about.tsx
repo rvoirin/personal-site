@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
+
 import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/layout';
@@ -17,19 +18,15 @@ const count = markdown.split(/\s+/)
 // const LinkRenderer = ({ ...children }) => <Link {...children} />;
 const About = () => (
   <Layout>
-    <Head>
-      <title>About</title>
-    </Head>
+    <NextSeo
+      title="About | Michael D'Angelo"
+      description="Facts about Michael D'Angelo."
+    />
     <article className="post" id="about">
       <header>
         <div className="title">
           <h2><Link href="/about">About Me</Link></h2>
-          <p>
-            (in about
-            {count}
-            {' '}
-            words)
-          </p>
+          <p>(in about {count} words)</p>
         </div>
       </header>
       <ReactMarkdown

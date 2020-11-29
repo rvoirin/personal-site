@@ -1,18 +1,17 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const PageNotFound = () => (
-  <div className="not-found">
-    <Head>
-      <title>404</title>
-    </Head>
-    <h1>Page Not Found.</h1>
-    <p>
-      Return to
-      <Link href="/">index</Link>
-      .
-    </p>
-  </div>
+  <>
+    <NextSeo
+      title="404 | Michael D'Angelo"
+      description="There's nothing to see here. Please move along. Really, move along. Go away."
+    />
+    <div className="not-found">
+      <h1>Page Not Found.</h1>
+      <p>Return to <Link href="/">index</Link>.</p>
+    </div>
+  </>
 );
 
 export default PageNotFound;

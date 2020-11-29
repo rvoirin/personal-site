@@ -6,7 +6,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint components data lib pages test ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -16,6 +17,7 @@
     "dayjs": "^1.9.6",
     "eslint": "^7.14.0",
     "next": "latest",
+    "next-seo": "^4.17.0",
     "node-fetch": "^2.6.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
