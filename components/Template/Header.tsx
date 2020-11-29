@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Hamburger from './Hamburger';
 import routes from '../../data/routes';
 
 const Header = () => (
@@ -20,7 +19,6 @@ const Header = () => (
         ))}
       </ul>
     </nav>
-    <Hamburger />
   </header>
 );
 
