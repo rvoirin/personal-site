@@ -11,10 +11,11 @@ const IndexPage = () => (
         </div>
       </header>
       <p>
-        {' '}
         Welcome to my website. Please feel free to read more
+        {' '}
         <Link href="/about">about me</Link>
         ,
+        {' '}
         or you can check out my
         {' '}
         <Link href="/resume">resume</Link>
@@ -28,7 +29,6 @@ const IndexPage = () => (
         <Link href="/stats">site statistics</Link>
         ,
         {' '}
-        {' '}
         or
         {' '}
         <Link href="/contact">contact</Link>
@@ -36,8 +36,8 @@ const IndexPage = () => (
         me.
       </p>
       <p>
-        {' '}
         Source available
+        {' '}
         <a href="https://github.com/mldangelo/personal-site">here</a>
         .
       </p>
