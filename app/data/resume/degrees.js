@@ -1,14 +1,10 @@
 const degrees = [
   {
-    school: 'Stanford University',
-    degree: 'M.S. Computational and Mathematical Engineering',
+    school: 'Georgia Institute of Technology',
+    degree: 'B.S. Computer Science, Concentrations: Intelligence & Human-Computer Interactions',
+    // concentrations: 'Concentrations: Intelligence & Human-Computer Interactions',
     link: 'https://stanford.edu',
-    year: 2016,
-  }, {
-    school: 'University at Buffalo',
-    degree: 'B.S. Electrical Engineering, Computer Engineering',
-    link: 'https://buffalo.edu',
-    year: 2012,
+    year: 2023,
   },
 ];
 
