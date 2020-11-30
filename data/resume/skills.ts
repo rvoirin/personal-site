@@ -1,7 +1,14 @@
 // TODO: Add Athletic Skills, Office Skills,
 // Data Engineering, Data Science, ML Engineering, ... ?
 
-const skills = [{
+type Category = string;
+
+type Skill = {
+  title: string, 
+  competency: number, 
+  category: Array<Category>,
+}
+const skills: Array<Skill> = [{
   title: 'Javascript',
   competency: 4,
   category: ['Web Development', 'Languages', 'Javascript'],

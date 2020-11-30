@@ -1,4 +1,12 @@
-const positions = [{
+type Position = {
+  company: string, 
+  position: string, 
+  link: string, 
+  daterange: string,
+  points: Array<string>,
+}
+
+const positions: Array<Position> = [{
   company: 'Arthena',
   position: 'Co-founder, C.T.O.',
   link: 'https://arthena.com',

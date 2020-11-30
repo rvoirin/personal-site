@@ -1,4 +1,11 @@
-const degrees = [
+type Degree = {
+  school: string, 
+  degree: string, 
+  link: string, 
+  year: number,
+}
+
+const degrees: Array<Degree> = [
   {
     school: 'Stanford University',
     degree: 'M.S. Computational and Mathematical Engineering',
