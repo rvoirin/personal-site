@@ -10,7 +10,7 @@ interface Props {
   };
 }
 
-const Job: React.FC<Props> = ({ data }) => (
+const Job: React.FC<Props> = ({ data }: any) => (
   <article className="jobs-container">
     <header>
       <h4>
@@ -26,7 +26,7 @@ const Job: React.FC<Props> = ({ data }) => (
       </p>
     </header>
     <ul className="points">
-      {data.points.map((point) => (
+      {data.points.map((point: string) => (
         <li key={point}>{point}</li>
       ))}
     </ul>

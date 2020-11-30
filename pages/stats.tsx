@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import Layout from '../components/layout';
 
@@ -8,9 +8,10 @@ import Site from '../components/Stats/Site';
 
 const Stats = () => (
   <Layout>
-    <Head>
-      <title>Stats</title>
-    </Head>
+    <NextSeo
+      title="Stats | Michael D'Angelo"
+      description="Statistics about this site and about me."
+    />
     <article className="post" id="stats">
       <header>
         <div className="title">

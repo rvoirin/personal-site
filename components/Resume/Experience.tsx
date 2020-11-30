@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import Job from './Experience/Job';
 
-const Experience = ({ data }) => (
+const Experience = ({ data }: any) => (
   <div className="experience">
     <div className="link-to" id="experience" />
     <div className="title">
       <h3>Experience</h3>
     </div>
-    {data.map((job) => (
+    {data.map((job: any) => (
       <Job
         data={job}
         key={job.company}

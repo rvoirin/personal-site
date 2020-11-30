@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 import Layout from '../components/layout';
 
@@ -23,32 +23,33 @@ const sections = [
 ];
 
 const Resume = () => (
-  <Layout>
-    <Head>
-      <title>Resume</title>
-    </Head>
-    <article className="post" id="resume">
-      <header>
-        <div className="title">
-          <h2><Link href="resume">Resume</Link></h2>
-          <div className="link-container">
-            {sections.map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
+  <>
+    <NextSeo
+      title="Resume | Michael D'Angelo"
+      description="My resume - probably out of date."
+    />
+    <Layout>
+      <article className="post" id="resume">
+        <header>
+          <div className="title">
+            <h2><Link href="resume">Resume</Link></h2>
+            <div className="link-container">
+              {sections.map((sec) => (
+                <h4 key={sec}>
+                  <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+                </h4>
+              ))}
+            </div>
           </div>
-
-        </div>
-      </header>
-      <Education data={degrees} />
-      <Experience data={positions} />
-      <Skills skills={skills} categories={categories} />
-      <Courses data={courses} />
-      <References />
-
-    </article>
-  </Layout>
+        </header>
+        <Education data={degrees} />
+        <Experience data={positions} />
+        <Skills skills={skills} categories={categories} />
+        <Courses data={courses} />
+        <References />
+      </article>
+    </Layout>
+  </>
 );
 
 export default Resume;

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import CategoryButton from './Skills/CategoryButton';
 import SkillBar from './Skills/SkillBar';
 
-const handleProps = ({ categories, skills }) => ({
-  buttons: categories.map((cat) => cat.name).reduce((obj, key) => ({
+const handleProps = ({ categories, skills }: any) => ({
+  buttons: categories.map((cat: any) => cat.name).reduce((obj: any, key: any) => ({
     ...obj,
     [key]: false,
   }), { All: true }),
@@ -17,7 +17,7 @@ class Skills extends Component {
 	public props: any;
 	public setState: any;
 
-  constructor(props) {
+  constructor(props: any) {
     super(props);
     this.state = handleProps({ categories: props.categories, skills: props.skills });
   }
@@ -37,8 +37,8 @@ class Skills extends Component {
       else if (a.title > b.title) ret = 1;
       else if (a.title < b.title) ret = -1;
       return ret;
-    }).filter((skill) => (actCat === 'All' || skill.category.includes(actCat)))
-      .map((skill) => (
+    }).filter((skill: any) => (actCat === 'All' || skill.category.includes(actCat)))
+      .map((skill: any) => (
         <SkillBar
           categories={this.props.categories}
           data={skill}

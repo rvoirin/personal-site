@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import Course from './Courses/Course';
 
-const getRows = (courses) => courses.sort((a, b) => {
+const getRows = (courses: any) => courses.sort((a: any, b: any) => {
   let ret = 0;
   if (a.university > b.university) ret = -1;
   else if (a.university < b.university) ret = 1;
   else if (a.number > b.number) ret = 1;
   else if (a.number < b.number) ret = -1;
   return ret;
-}).map((course, idx) => (
+}).map((course: any, idx: number) => (
   <Course
     data={course}
     key={course.title}
@@ -18,7 +18,7 @@ const getRows = (courses) => courses.sort((a, b) => {
   />
 ));
 
-const Courses = ({ data }) => (
+const Courses = ({ data }: any) => (
   <div className="courses">
     <div className="link-to" id="courses" />
     <div className="title">

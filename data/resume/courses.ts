@@ -1,7 +1,7 @@
 type Course = {
   title: string, 
   number: string, 
-  link: string, 
+  link?: string, 
   university: string,
 }
 
@@ -54,12 +54,10 @@ const courses: Array<Course> = [
   }, {
     title: 'Spacecraft Design',
     number: 'AA 236A',
-    link: '',
     university: 'Stanford',
   }, {
     title: 'Advanced Programming',
     number: 'CME 212',
-    link: '',
     university: 'Stanford',
   }, {
     title: 'Design Theory and Methodology',
@@ -69,12 +67,10 @@ const courses: Array<Course> = [
   }, {
     title: 'Software Engineering Concepts',
     number: 'CSE 442',
-    link: '',
     university: 'Buffalo',
   }, {
     title: 'Hardware/Software Integrated System Design',
     number: 'CSE 453',
-    link: '',
     university: 'Buffalo',
   }, {
     title: 'Data Structures',
@@ -84,7 +80,6 @@ const courses: Array<Course> = [
   }, {
     title: 'Introduction to Digital Signal Processing',
     number: 'EE 516',
-    link: '',
     university: 'Buffalo',
   }, {
     title: 'Computer Vision and Image Processing',
@@ -94,7 +89,6 @@ const courses: Array<Course> = [
   }, {
     title: 'Realtime Embedded Systems',
     number: 'CSE 321',
-    link: '',
     university: 'Buffalo',
   }, {
     title: 'Computer Architecture',
