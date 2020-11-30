@@ -8,37 +8,27 @@ import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
 
 const data = [
   {
-    link: 'https://github.com/mldangelo',
+    link: 'https://github.com/rvoirin',
     label: 'Github',
     icon: faGithub,
   },
   {
-    link: 'https://facebook.com/d',
-    label: 'Facebook',
-    icon: faFacebook,
-  },
-  {
-    link: 'https://www.instagram.com/dangelosaurus/',
+    link: 'https://www.instagram.com/rachelvoirin/',
     label: 'Instagram',
     icon: faInstagram,
   },
   {
-    link: 'https://www.linkedin.com/in/michaelldangelo',
+    link: 'https://www.linkedin.com/in/rachelvoirin',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
   {
-    link: 'https://angel.co/michael-d-angelo',
-    label: 'Angel List',
-    icon: faAngellist,
-  },
-  {
-    link: 'https://twitter.com/dangelosaurus',
+    link: 'https://twitter.com/rachelvoirin',
     label: 'Twitter',
     icon: faTwitter,
   },
   {
-    link: 'mailto:michael.l.dangelo@gmail.com',
+    link: 'mailto:rachelanav@gmail.com',
     label: 'Email',
     icon: faEnvelope,
   },
