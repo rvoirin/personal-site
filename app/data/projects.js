@@ -1,17 +1,17 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
+    title: 'QRty.tech',
+    subtitle: '2020 QuackHacks Hackathon',
     link: '/projects/nearestdollar/',
     image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    date: '2020-09-15',
     desc: 'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      + 'Using ReactJS and Bootstrap for the frontend and Socket.io for the backend, '
+      + 'created a web app that enables users to send text and images across multiple devices in real time.'
+      + 'Has had 80+ users and sent more than 150 images.',
   }, {
-    title: 'Harvest',
+    title: 'Food Friend',
     subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
     link: 'https://devpost.com/software/harvest',
     image: '/images/projects/harvest.jpg',
@@ -20,7 +20,7 @@ const data = [
       + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
       + 'and nutrient deficiencies at an affordable price for the developing world.',
   }, {
-    title: 'Space Potato',
+    title: 'W4T3R',
     subtitle: 'A kickstarter funded potato powered weather balloon.',
     link: 'http://www.spacepotato.org',
     image: '/images/projects/spacepotato.jpg',
@@ -29,7 +29,7 @@ const data = [
       + 'and gps transponder. Resulting photos were published in a coffee table book. '
       + 'You can email me for a copy.',
   }, {
-    title: 'Cat Detector',
+    title: 'hackgt 2020 project',
     subtitle: 'A convolutional neural network to classify cats! (and dogs)',
     link: '/project/catdetector/',
     image: '/images/projects/catdetector.jpg',
